@@ -1,0 +1,16 @@
+window {
+	background: #212121;
+}
+
+.login-title {
+	color: white;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.phone-input {
+	min-width:320px;
+    min-height:42px;
+    padding:10px;
+    border-radius:10px;
+}
