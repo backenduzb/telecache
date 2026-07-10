@@ -8,7 +8,7 @@ export CFLAGS += $(shell pkg-config --cflags gtk4)
 LDLIBS += $(shell pkg-config --libs gtk4) -ltdjson
 
 ALL_SUBDIRS := $(wildcard */)
-IGNORE_DIRS := include/ telegram/ assets/
+IGNORE_DIRS := include/ assets/ tdlib_files/ tdlib_db/ 
 SUBDIRS := $(filter-out $(IGNORE_DIRS),$(ALL_SUBDIRS))
 
 SUBDIR_OBJS := $(addsuffix out.o,$(SUBDIRS))

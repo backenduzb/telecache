@@ -2,3 +2,6 @@ compile_commands.json
 app
 .cache
 .zed
+tdlib_db
+tdlib_files
+.env

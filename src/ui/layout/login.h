@@ -2,7 +2,28 @@
 #define LOGIN_H
 
 #include <gtk/gtk.h>
+#include "gtk/gtkshortcut.h"
 
-GtkWidget *login_page_new(void);
+typedef enum {
+    STAGE_LOADING,
+    STAGE_PHONE,
+    STAGE_SMS,
+    STAGE_2FA,
+} AuthStage;
+
+typedef struct {
+	GtkWidget *box;
+	GtkWidget *inputs_con;
+	GtkWidget *reg_input;
+	GtkWidget *phone_input;
+	GtkWidget *button;
+	GtkWidget *title;
+	GtkWidget *caption;
+	gpointer td_client;
+	AuthStage stage;
+	gulong phone_signal_id;
+} LoginContext;
+
+GtkWidget *login_page_new(LoginContext *ctx);
 
 #endif

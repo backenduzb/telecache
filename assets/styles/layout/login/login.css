@@ -6,7 +6,18 @@
 }
 
 .login-title {
-    color: #ffffff;
-    font-size: 32px;
+    font-size: 20px;
+    color: white;
     font-weight: bold;
+    min-width: 100px;
+    min-height: 30px; 
+}
+
+.login-caption {
+	margin-bottom: 15px;
+    font-size: 16px;
+    color: #707579; 
+    min-width: 100px;
+    min-height: 40px;
+    line-height: 1.4;
 }

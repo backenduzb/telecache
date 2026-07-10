@@ -1,16 +1,13 @@
 .phone-input,
-.reg-phone-input {
+.regen {
     min-height: 22px;
-    padding: 8px 5px;
-
+    padding: 15px 15px;
     background: transparent;
     background-image: none;
-
     color: white;
 
     border: none;
     border-bottom: 2px solid white;
-
     border-radius: 0;
 
     box-shadow: none;
@@ -18,37 +15,40 @@
 }
 
 .phone-input:focus,
-.reg-phone-input:focus,
+.regen:focus,
 .phone-input:focus-within,
-.reg-phone-input:focus-within,
+.regen:focus-within,
 .phone-input:hover,
-.reg-phone-input:hover {
+.regen:hover {
     background: transparent;
     background-image: none;
-
     border: none;
     border-bottom: 2px solid white;
-
     box-shadow: none;
     outline: none;
 }
 
 .phone-input > text,
-.reg-phone-input > text {
+.regen > text {
     background: transparent;
     color: white;
     font-size: 16px;
 }
 
-
 .phone-input > text > placeholder,
-.reg-phone-input > text > placeholder {
+.regen > text > placeholder {
+	font-size: 16px;
     color: #888888;
 }
 
-.reg-phone-input {
-	width: 30px;
+.phone-input > text > placeholder {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.regen {
+    min-width: 60px;
 }
 .phone-input {
-	width: 150px;
+    min-width: 250px;
 }

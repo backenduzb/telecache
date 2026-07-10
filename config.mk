@@ -4,7 +4,7 @@ GTK_CFLAGS := $(shell pkg-config --cflags gtk4)
 GTK_LIBS   := $(shell pkg-config --libs gtk4)
 
 TDLIB_CFLAGS := -I/usr/local/include
-TDLIB_LIBS   := -L/usr/local/lib -ltdjson
+TDLIB_LIBS   := -L/usr/local/lib -ltdjson 
 
 WARNINGS := \
     -Wall \
