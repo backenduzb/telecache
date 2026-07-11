@@ -12,16 +12,12 @@ static char *load_env(const char *variable)
 {
     char cwd[1024];
     getcwd(cwd, sizeof(cwd));
-    printf("CWD = %s\n", cwd);
-    FILE *fp = fopen("../.env", "r");
+    FILE *fp = fopen(".env", "r");
 
     if (!fp) {
         perror("fopen");
         return NULL;
     }
-
-    printf(".env opened successfully\n");
-
     char line[512];
 
     while (fgets(line, sizeof(line), fp)) {
@@ -34,8 +30,6 @@ static char *load_env(const char *variable)
             continue;
 
         *eq = '\0';
-
-        printf("KEY=[%s] VALUE=[%s]\n", line, eq + 1);
 
         if (strcmp(line, variable) == 0) {
             strcpy(env_value, eq + 1);

@@ -17,11 +17,14 @@ typedef struct {
 	GtkWidget *reg_input;
 	GtkWidget *phone_input;
 	GtkWidget *button;
+	GtkWidget *stack;
 	GtkWidget *title;
 	GtkWidget *caption;
 	gpointer td_client;
 	AuthStage stage;
 	gulong phone_signal_id;
+
+	gpointer api_ctx;
 } LoginContext;
 
 GtkWidget *login_page_new(LoginContext *ctx);
