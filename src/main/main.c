@@ -3,6 +3,7 @@
 #include <gtk/gtk.h>
 #include "../ui/windows/mainWindow.h"
 
+
 static void activate(GtkApplication *app) {
 	GtkWidget *window = main_window_new(app);
 	gtk_window_present(GTK_WINDOW(window));

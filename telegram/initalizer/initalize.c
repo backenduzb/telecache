@@ -5,8 +5,6 @@ void initialize_tdlib(LoginContext *ctx) {
         return;
     }
     if (ctx->td_client == NULL) {
-        g_printerr("\n[KATTA XATO] ctx->td_client o'zi NULL bo'lib yotibdi! Shuning uchun segfault beryapti!\n");
-        g_printerr("Iltimos, td_json_client_create() funksiyasi chaqirilganini tekshiring.\n\n");
         return;
     }
 

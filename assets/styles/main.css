@@ -1,5 +1,8 @@
 @import url("./layout/login/login.css");
+@import url("./layout/chatare.css");
+@import url("./layout/chatlist.css");
+
 
 .root {
-	background: #212121;
+	background: #272727;
 }
