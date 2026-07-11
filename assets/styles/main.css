@@ -6,3 +6,22 @@
 .root {
 	background: #272727;
 }
+
+.paned-widget {
+    background: transparent;
+}
+separator,
+.paned-widget > handle {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    min-width: 0;
+    max-width: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+separator {
+	border-right: 1px solid #202020;
+}

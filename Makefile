@@ -31,3 +31,5 @@ clean:
 		$(MAKE) -C $$dir clean; \
 	done
 	rm -f $(OUT)
+
+.PHONY: all clean

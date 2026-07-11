@@ -41,7 +41,7 @@ GtkWidget* create_chatarea_layout() {
     GtkWidget *scroll = gtk_scrolled_window_new();
     gtk_widget_set_vexpand(scroll, TRUE);
     
-    messages_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 8);
+    messages_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
     gtk_widget_add_css_class(messages_box, "chat-messages-box");
     
     gtk_scrolled_window_set_child(GTK_SCROLLED_WINDOW(scroll), messages_box);
@@ -51,7 +51,7 @@ GtkWidget* create_chatarea_layout() {
     gtk_widget_add_css_class(input_panel, "chat-input-panel");
 
     message_entry = gtk_entry_new();
-    gtk_entry_set_placeholder_text(GTK_ENTRY(message_entry), "Xabar yozing...");
+    gtk_entry_set_placeholder_text(GTK_ENTRY(message_entry), "Write a message...");
     gtk_widget_set_hexpand(message_entry, TRUE);
     g_signal_connect(message_entry, "activate", G_CALLBACK(on_send_clicked), NULL);
 

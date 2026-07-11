@@ -1,5 +1,6 @@
 #include "./mainWindow.h"
 #include "glib.h"
+#include "gtk/gtk.h"
 #include "gtk/gtkshortcut.h"
 #include "../../../include/cssload.h"
 #include "../layout/login.h"
@@ -24,11 +25,13 @@ GtkWidget *main_window_new(GtkApplication *app) {
 
     GtkWidget *stack = gtk_stack_new();
     gtk_stack_set_transition_type(GTK_STACK(stack), GTK_STACK_TRANSITION_TYPE_CROSSFADE);
+    gtk_widget_add_css_class(GTK_WIDGET(stack), "stack-widget");
     gtk_widget_set_hexpand(stack, TRUE);
     gtk_widget_set_vexpand(stack, TRUE);
     gtk_box_append(GTK_BOX(root), stack);
 
     GtkWidget *main_app_view = gtk_paned_new(GTK_ORIENTATION_HORIZONTAL);
+    gtk_widget_add_css_class(main_app_view, "paned-widget");
     gtk_widget_set_hexpand(main_app_view, TRUE);
     gtk_widget_set_vexpand(main_app_view, TRUE);
 

@@ -1,7 +1,13 @@
 .chat-list-container {
     background-color: #272727;
     padding: 0px;
+    border: none;
     margin: 0px;
+}
+
+scrolledwindow {
+    border: none;
+    box-shadow: none;
 }
 
 list,
@@ -14,7 +20,6 @@ listbox {
     padding: 0;
     margin: 0;
 }
-
 
 .chat-search-bar {
     margin: 10px;

@@ -1,6 +1,8 @@
 .chat-area-container {
+	border: none;
+	box-shadow: none;
+	outline: none;
     background-color: #000;
-    border-left: #212121;
 }
 
 .chat-title-panel {
@@ -37,6 +39,11 @@
     color: #e9e9e9;
 }
 
+.message-text {
+	margin: 0;
+	padding: 0;
+}
+
 .message-outgoing {
     background-color: #4c4c4c; 
     border-bottom-right-radius: 0;
@@ -44,19 +51,32 @@
 }
 
 .message-time {
-    font-size: 10px;
     color: #919191;
-    margin-top: 2px;
+    margin-top: -5px;
 }
 
 .chat-input-panel {
-    background-color: #4c4c4c;
+    background-color: #272727;
     padding: 10px 15px;
+    box-shadow: none;
     border-top: 1px solid #212121;
 }
 
+entry {
+	font-size: 15px;
+	box-shadow: none;
+	border: none;
+	background-color: #272727;
+	color: #e9e9e9;
+}
+entry > placeholder {
+	padding: 10px 10px;
+	font-size: 15px;
+	color: #919191;
+}
+
 .chat-send-button {
-    background-color: #868686;
+    background-color: #272727;
     color: white;
     font-weight: bold;
     border-radius: 6px;
